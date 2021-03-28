@@ -1,0 +1,40 @@
+global $pmprosm_sponsored_account_levels;
+$pmprosm_sponsored_account_levels = array(
+    //set 5 seats at checkout
+    3 => array(                // VIP membership level
+        'main_level_id' => 3, //redundant but useful
+        'sponsored_level_id' => array(5), //array or single id
+        'min_seats' => 1,
+        'max_seats' => 10,
+        'discount_code' => array(
+            'initial_payment' => '10', // the amount you want sponsored recipients to each pay for their accounts
+            'billing_amount' => '10',
+            'cycle_number' => 1,        // The number of billing cycles for the gift membership level.
+        	'cycle_period' => '"month"',
+             )
+        ),
+    2 => array(                //  GOLD membership level
+        'main_level_id' => 2, //redundant but useful
+        'sponsored_level_id' => array(5), //array or single id
+        'min_seats' => 1,
+        'max_seats' => 10,
+        'discount_code' => array(
+            'initial_payment' => '10', // the amount you want sponsored recipients to each pay for their accounts
+            'billing_amount' => '10',
+            'cycle_number' => 1,        // The number of billing cycles for the gift membership level.
+        	'cycle_period' => '"month"',
+            )
+        ),
+    1 => array(                // Platinum membership level
+        'main_level_id' => 1, //redundant but useful
+        'sponsored_level_id' => array(3), //array or single id
+        'min_seats' => 1,
+        'max_seats' => 10,
+        'discount_code' => array(
+            'initial_payment' => '10', // the amount you want sponsored recipients to each pay for their accounts
+            'billing_amount' => '10',
+            'cycle_number' => 1,        // The number of billing cycles for the gift membership level.
+        	'cycle_period' => '"month"',
+            )
+        )
+);
